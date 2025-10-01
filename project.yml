@@ -2,7 +2,7 @@ name: nginx-test
 services:
   web:
     build:
-      context:
+      context: .
       dockerfile: Dockerfile
     ports:
       - "8080:80"
