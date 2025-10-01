@@ -1,9 +1,8 @@
 name: nginx-test
 services:
   web:
-    #image: nginx:alpine
     build:
-      context:
+      context: .
       dockerfile: Dockerfile
     ports:
       - "8080:80"
